@@ -221,17 +221,17 @@ let user123 = {
   }
 };
 
-const userSuscription = (user) =>  {
-  if(user.getSuscription() != null && user.suscription != "") {
-    let result = suscriptions.find((sus) => sus.type.toLowerCase() == user.getSuscription().toLowerCase());
-    return `Hola ${user.name}, tu suscripción es: "${user.getSuscription()}" ${result.description}`;
-  } else {
-    return "No cuentas con una suscripción disponible.";
-  };
-};
+const userSuscription = (obj) => {
+  const result = suscriptions.find(e => e.type.toLowerCase() === obj.getSuscription().toLowerCase());
+
+  if(result != undefined) {
+    return `Hola ${obj.name}, tu suscripción es: "${obj.getSuscription()}" ${result.description}`;
+  }
+
+  return "No cuentas con una suscripción disponible.";
+}
 
 console.log(userSuscription(user123));
-
 ```
 
 ## Ciclos
