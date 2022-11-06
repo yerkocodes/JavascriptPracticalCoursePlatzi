@@ -62,7 +62,8 @@ console.log(dineroAhorrado - deudas)
   - **¿Cuándo me sirve usar una función en mi código?**
   	- Cuando vemos la necesidad de repetir las mismas acciones es ideal empaquetar dichas acciones en una función y así optimizamos el código reutilizandolo.
   - **¿Cuál es la diferencia entre parámetros y argumentos de una función?**
-  	- Los argumentos son la referencia que hacemos a algún dato entregado a una función cuando estamos creando su lógica. Por el contrario los parámetros son el valor especifico que le entregamos a nuestras funciones cuando las invocamos para que estas se ejecuten correctamente.
+  	- Los **parámetros** son la referencia que hacemos a algún dato entregado a una función cuando estamos creando su lógica. 
+    Por el contrario los **argumentos** son el valor especifico que le entregamos a nuestras funciones cuando las invocamos para que estas se ejecuten correctamente.
 
   2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
