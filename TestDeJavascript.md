@@ -1,28 +1,27 @@
 ## Variables y operaciones
----
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
-¿Qué es una variable y para qué sirve?
-- Una variable es un espacio en memoria que nos sirve para almacenar algun valor en especifico. A este almacenamiento lo podemos identificar con un nombre que en pogramacion suele ser con lowercamelcase.
+- **¿Qué es una variable y para qué sirve?**
+    - Una variable es un espacio en memoria que nos sirve para almacenar algún valor en especifico. A este almacenamiento lo podemos identificar con un nombre que en programación suele ser con lowercamelcase.
 
-¿Cuál es la diferencia entre declarar e inicializar una variable?
-- Declarar una variable hace referencia cuando asigna un nombre a un espacio de memoria pero no lo utiliza con ningun valor. E inizializar una variable hace referencia cuando a este espacio de memoria con identificador le asignamos un valor en el.
+- **¿Cuál es la diferencia entre declarar e inicializar una variable?**
+    - Declarar una variable hace referencia cuando asigna un nombre a un espacio de memoria pero no lo utiliza con ningún valor. E inicializar una variable hace referencia cuando a este espacio de memoria con identificador le asignamos un valor en el.
 
-¿Cuál es la diferencia entre sumar números y concatenar strings?
-- Sumar numeros es cuando al igual que en una calculadora introducimos dos valores y retorna el resultado como un valor. Concatenar string hace referencia cuando unimos dos palabras una tras la otra por ejemplo "Buenos" + "dias" = "Buenosdias"
+- **¿Cuál es la diferencia entre sumar números y concatenar strings?**
+    - Sumar números es cuando al igual que en una calculadora introducimos dos valores y retorna el resultado como un valor. Concatenar string hace referencia cuando unimos dos palabras una tras la otra por ejemplo "Buenos" + "días" = "Buenosdias"
 
-¿Cuál operador me permite sumar o concatenar?
-- Tanto el operador de suma como concatenacion es el mismo, el de suma +
+- **¿Cuál operador me permite sumar o concatenar?**
+    - Tanto el operador de suma como concatenación es el mismo, el de suma +
 
-2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
+2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:  
 
-Nombre = String
-Apellido = String
-Nombre de usuario en Platzi = String
-Edad = Number
-Correo electrónico = String
-Mayor de edad = Boolean
-Dinero ahorrado = Number
+>Nombre = String  
+Apellido = String  
+Nombre de usuario en Platzi = String  
+Edad = Number  
+Correo electrónico = String  
+Mayor de edad = Boolean  
+Dinero ahorrado = Number  
 Deudas = Cuantas deudas? = Number || Especificar las deudas = Array de objetos
 
 3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
@@ -54,16 +53,14 @@ console.log(nombre + " " + apellido);
 console.log(dineroAhorrado - deudas)
   ```
 
-  Funciones
-  ---
-  1️⃣ Responde las siguientes preguntas en la sección de comentarios:
-
-  ¿Qué es una función?
-  Una funcion es una especie de paquete con muchas instrucciones dentro, el cual podemos invocar luego llamandolo por su identificador y este ejecutara automaticamente las instrucciones dentro.
-  ¿Cuándo me sirve usar una función en mi código?
-  Cuando vemos la necesidad de repetir las mismas acciones es ideal empaquetar dichas acciones en una funcion y asi optimizamos el codigo reutilizandolo.
-  ¿Cuál es la diferencia entre parámetros y argumentos de una función?
-  Los argumentos son la referencia que hacemos a algun dato entregado a una funcion cuando estamos creando su logica. Por el contrario los parametros son el valor especifico que le entregamos a nuestras funciones cuando las invocamos para que estas se ejecuten correctamente.
+ ## Funciones
+1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+  - **¿Qué es una función?**
+  	- Una función es una especie de paquete con muchas instrucciones dentro, el cual podemos invocar luego llamándolo por su identificador y este ejecutara automáticamente las instrucciones dentro.
+  - **¿Cuándo me sirve usar una función en mi código?**
+  	- Cuando vemos la necesidad de repetir las mismas acciones es ideal empaquetar dichas acciones en una función y así optimizamos el código reutilizandolo.
+  - **¿Cuál es la diferencia entre parámetros y argumentos de una función?**
+  	- Los argumentos son la referencia que hacemos a algún dato entregado a una función cuando estamos creando su lógica. Por el contrario los parámetros son el valor especifico que le entregamos a nuestras funciones cuando las invocamos para que estas se ejecuten correctamente.
 
   2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
@@ -82,24 +79,24 @@ console.log(dineroAhorrado - deudas)
 ```
 
 ## Condicionales
----
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
-¿Qué es un condicional?
-Es una validacion que se hace para saber que debe hacer el programa en diferentes casos.
-¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
-Existen condicionales IF, If Else, Switch, ternario y se podria decir que los de ciclos.
-If:
+- **¿Qué es un condicional?**
+	- Es una validación que se hace para saber que debe hacer el programa en diferentes casos.
+- **¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?**
+	- Existen condicionales IF, If Else, Switch, ternario y se podría decir que los de ciclos.  
+
+**If:**
 ``` javascript
-// Este condicional evalua una expresion y de cumplirse ejecutara lo indicado dentro, de lo contrario continuara con el programa de forma secuencial.
+// Este condicional evalúa una expresión y de cumplirse ejecutara lo indicado dentro, de lo contrario continuara con el programa de forma secuencial.
 let live = true;
 if(live == true) {
   console.log("Have a nice day!");
 }
 ```
-If Else:
+**If Else:**
 ``` javascript
-// Este condicional es igual al IF, solo que se le anade una opcion en el caso de que no se cumpla ejecutara instrucciones especificadas antes de continuar con el resto del programa.
+// Este condicional es igual al IF, solo que se le añade una opción en el caso de que no se cumpla ejecutara instrucciones especificadas antes de continuar con el resto del programa.
 let live = true;
 if(live == true) {
   console.log("Have a nice day!");
@@ -107,7 +104,7 @@ if(live == true) {
   console.log("R.I.P");
 }
 ```
-Switch:
+**Switch:**
 ``` javascript
 let live = true;
 switch(live) {
@@ -122,9 +119,14 @@ switch(live) {
     break;
 }
 ```
-Ternario:
-En ciclos:
-¿Puedo combinar funciones y condicionales?
+**Ternario:**
+``` javascript
+let live = true;
+live ? console.log("Welocome") : console.log("RIP");
+```
+
+- **¿Puedo combinar funciones y condicionales?**
+  - Se pueden hacer combinaciones de ambas llamando tanto ciclos dentro de las funciones como funciones dentro de los ciclos. Todo dependerá de la lógica de nuestro programa.
 
 2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
 
@@ -232,14 +234,14 @@ console.log(userSuscription(user123));
 ## Ciclos
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
-    ¿Qué es un ciclo?
-      Un ciclo es un bucle que se repetirá las veces que la condición especificada en el se cumpla, una vez no lo haga el ciclo se cerrará y continuará con el programa.
-    ¿Qué tipos de ciclos existen en JavaScript?
-      Existen los ciclos for, while, do while.
-    ¿Qué es un ciclo infinito y por qué es un problema?
-      Un ciclo infinito es cuando no posee un condicional que detenga la ejecución, si bien puede tener un condicional este nunca se inválida. El problema de ésto es que puede colapsar nuestra ejecución gastando memoria sin control.
-    ¿Puedo mezclar ciclos y condicionales?
-    Los ciclos while, do while y for tienen en su estructura un condicional para saber los límites de la ejecución de estos.
+- **¿Qué es un ciclo?**
+    - Un ciclo es un bucle que se repetirá las veces que la condición especificada en el se cumpla, una vez no lo haga el ciclo se cerrará y continuará con el programa.
+- **¿Qué tipos de ciclos existen en JavaScript?**
+    - Existen los ciclos for, while, do while.
+- **¿Qué es un ciclo infinito y por qué es un problema?**
+    - Un ciclo infinito es cuando no posee un condicional que detenga la ejecución, si bien puede tener un condicional este nunca se inválida. El problema de ésto es que puede colapsar nuestra ejecución gastando memoria sin control.
+- **¿Puedo mezclar ciclos y condicionales?**
+    - Los ciclos while, do while y for tienen en su estructura un condicional para saber los límites de la ejecución de estos.
 
 2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
@@ -282,14 +284,39 @@ do {
 } while(userResponse != 4);
 ```
 
-Listas
+## Listas
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
 
-    ¿Qué es un array?
-    ¿Qué es un objeto?
-    ¿Cuándo es mejor usar objetos o arrays?
-    ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+¿Qué es un array?
+Un array es una colección o lista de datos pudiendo ser estos de tipo String, Number, Object, Array, etc.
+- **¿Qué es un objeto?**
+    - Un objeto es la representación de una entidad en el mundo real conteniendo atributos y comportamientos.
+- **¿Cuándo es mejor usar objetos o arrays?**
+    - Cuando necesitamos tener una lista de datos como nombres o muchos elementos lo ideal es usar Arrays. Cuando necesitemos crear representaciones de objetos de la vida real que contengan múltiples datos y comportamientos propios lo ideal es usar Objectos.
+- **¿Puedo mezclar arrays con objetos o incluso objetos con arrays?**
+    - Se pueden contener unos con otros por ejemplo se puede crear un Array de Objetos y también cada objeto puede tener como atributo un Array de información propia del objeto.
 
 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+``` javascript
+const firstElementOfArray = array => array[0];
+console.log(firstElementOfArray(["Yerko", "Cortes", "Baeza"]));
+```
+
 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+``` javascript
+const printElementsOfArray = array => array.forEach(e => console.log(e));
+printElementsOfArray(["Yerko", "Cortes", "Baeza"]);
+```
+
 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+``` javascript
+const printAttributesOfObject = object => {
+  for(attr in object) {
+    console.log(`${attr} = ${object[attr]}`);
+  };
+};
+
+printAttributesOfObject(user123);
+```
+
+
