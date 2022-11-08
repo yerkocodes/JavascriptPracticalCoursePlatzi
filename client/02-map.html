@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <h1>Array Map method</h1>
+    <div id="app"></div>
+
+    <div id="tasks">
+      <!--<label for="task1">Tarea 1:</label>-->
+      <!--<input id="task1" type="checkbox" name="task1" checked disabled>-->
+    </div>
+
+    <script>
+      const products = [
+        { title: "Burger", price: 121 },
+        { title: "Pizza", price: 20 }
+      ];
+
+      const app = document.getElementById("app");
+
+      products.forEach(element => {
+        app.innerHTML += `<li>${element.title}</li>`;
+      })
+
+      let tasks = [
+        { id: 001, description: "To do breakfast", status: true },
+        { id: 002, description: "To do JS test", status: false },
+        { id: 003, description: "To do cleaning", status: true }
+      ];
+
+      let divTasks = document.getElementById("tasks");
+
+      //ARRAY MAP
+      let taskList = tasks.map(e => {
+        return `
+          <label for="${e.id}">Tarea ${e.id} - ${e.description}</label>
+          <input id="${e.id}" type="checkbox" name="${e.id}" ${e.status ? "checked" : ""} disabled>
+          <br>
+        `;
+      })
+
+      divTasks.innerHTML = taskList.join("");
+      //tasks.forEach(e => {
+      //  divTasks.innerHTML += `
+      //<label for="${e.id}">Tarea ${e.id} - ${e.description}</label>
+      //<input id="${e.id}" type="checkbox" name="${e.id}" ${e.status ? "checked" : ""} disabled>
+      //<br>
+      //`;
+      //})
+
+    </script>
+
+  </body>
+</html>
